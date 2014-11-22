@@ -24,7 +24,7 @@ class ChatSession extends PluginTask{
                 $this->state = 2;
                 $this->player->sendMessage("[ChatDefender] You have been blocked for " . $this->blockLength * $this->getOwner()->getConfig()->get("baseblocklength") . "second(s)");
                 $this->getOwner()->getServer()->getScheduler()->scheduleDelayedTask($this, 20*$this->getOwner()->getConfig()->get("baseblocklength")*$this->blockLength);
-                $this->log++;
+                $this->blockLength++;
                 return false;
             }
             else{

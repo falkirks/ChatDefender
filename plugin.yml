@@ -1,6 +1,6 @@
 name: ChatDefender
-main: ChatDefender\ChatDefender
-version: 1.0
+main: falkirks\chatdefender\ChatDefender
+version: 1.1
 author: Falk
 api: [1.0.0]
 load: POSTWORLD
