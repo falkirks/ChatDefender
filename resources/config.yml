@@ -1,0 +1,11 @@
+similarity: 1
+  # Required similarity of messages to be considered spam
+  # Uses similar_text()
+ratelimit: 1
+  # Mininum time between messages for them to be considered spam
+  # if it is 1 then messages sent 1 second apart or less will be spam
+blockme: true
+  # Block usage of /me by blocked players
+baseblocklength: 60
+  # Block length in seconds
+  # Will increase with repeated blocks

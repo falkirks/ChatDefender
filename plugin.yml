@@ -1,0 +1,21 @@
+name: ChatDefender
+main: ChatDefender\ChatDefender
+version: 1.0
+author: Falk
+api: [1.0.0]
+load: POSTWORLD
+permissions:
+ chatdefender:
+  default: op
+  description: ChatDefender top level
+  children:
+   chatdefender.exempt:
+    default: op
+    description: Exempt from all blocks
+    children:
+      chatdefender.exempt.similar:
+        default: op
+        description: Exempt from similarity checking
+      chatdefender.exempt.rate:
+        default: op
+        description: Exempt from rate limit
