@@ -13,6 +13,13 @@ class ChatDefender extends PluginBase implements Listener{
     public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->s = [];
+        @mkdir($this->getDataFolder());
+        $this->config = new Config($this->getDataFolder(). "config.yml", Config::YAML, array(
+            "similarity" => 1,
+            "ratelimit" => 1,
+            "blockme" => true,
+            "baseblocklength" => 60,
+            ));
     }
     public function onChat(PlayerChatEvent $event){
         if(!isset($this->sessions[$event->getPlayer()->getName()])){
