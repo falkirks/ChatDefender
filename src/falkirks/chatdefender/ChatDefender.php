@@ -11,6 +11,7 @@ class ChatDefender extends PluginBase implements Listener{
     /** @var  ChatSession[] */
     public $sessions;
     public function onEnable(){
+        $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->s = [];
     }
