@@ -1,3 +1,4 @@
+---
 similarity: 1
   # Required similarity of messages to be considered spam
   # Uses similar_text()
@@ -9,3 +10,4 @@ blockme: true
 baseblocklength: 60
   # Block length in seconds
   # Will increase with repeated blocks
+...
